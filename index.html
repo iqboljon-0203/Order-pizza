@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pizza order</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box">
+                <h1>Pizza order</h1>
+                <form id="form" class="form">
+                    <input type="text" name="user_name" placeholder="Enter your name" required>
+                    <input type="tel" name="user_phone" value="+998" placeholder="Enter your phone number..." required>
+                    <input type="email" name="user_email" placeholder="Enter your email..." required>
+                    <div class="Dough">
+                        <!-- <h3></h3> -->
+                        <label for="menu">Dough thickness:</label>
+                        <select id="menu" name="menu">
+                          <option value="None">None</option>
+                          <option value="thin">thin</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Thick">Thick</option>
+                        </select>
+                    </div>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <!-- <div class="size__box"> -->
+                            
+                            <input type="radio" value="25sm" name="sizes"  >
+                            <label for="sizes" name="sizes">  25sm </label>
+                            <input type="radio" value="30sm" name="sizes" >
+                            <label for="sizes"  name="sizes">  30sm </label>
+                            <input type="radio" value="35sm" name="sizes" >
+                            <label for="sizes" name="sizes">  35sm </label>
+                            
+                    </div>
+                    <h3>On Pizza:</h3>
+                    <div class="row" id="veggieSelection">
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Tomato" id="veggieChoice1">
+                                <label class="form-check-label" for="veggieChoice1">
+                                    Tomato
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Pickled cucumber" id="veggieChoice2">
+                                <label class="form-check-label" for="veggieChoice2">
+                                    Pickled cucumber
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Turkey meat" id="veggieChoice3">
+                                <label class="form-check-label" for="veggieChoice3">
+                                    Turkey meat
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Mushroom" id="veggieChoice4">
+                                <label class="form-check-label" for="veggieChoice4">
+                                    Mushroom
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Olive" id="veggieChoice5">
+                                <label class="form-check-label" for="veggieChoice5">
+                                    Olive
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input" type="checkbox" value="Harse meat" id="veggieChoice6">
+                                <label class="form-check-label" for="veggieChoice6">
+                                    Harse meat
+                                </label>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <h3>Add</h3>
+                    <div class="Add653">
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input__add" type="checkbox" value="Pepper" id="veggieChoice5">
+                                <label class="form-check-label" for="veggieChoice5">
+                                    Pepper
+                                </label>
+                            </div>
+                        </div>
+                        <div class="Pizza">
+                            <div class="form-check">
+                                <input class="check__input__add" type="checkbox" value="Sausages" id="veggieChoice6">
+                                <label class="form-check-label" for="veggieChoice6">
+                                    Sausages
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Save</button>
+                </form>     
+            </div>
+            <div class="card" id="list">
+                
+            </div>
+         </div>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
